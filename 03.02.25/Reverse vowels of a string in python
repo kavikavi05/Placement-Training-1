@@ -1,0 +1,5 @@
+def reverse_vowels(s):
+    vowels = [c for c in s if c in "aeiouAEIOU"]
+    return "".join(c if c not in vowels else vowels.pop() for c in s)
+
+print(reverse_vowels("hello"))

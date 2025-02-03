@@ -1,0 +1,13 @@
+class Solution(object):
+    def lengthOfLongestSubstring(self, s):
+        j=0
+        arr=[]
+        maxL=0
+        while(j<len(s)):
+            if s[j] in arr:
+                arr.pop(0)
+                continue
+            arr.append(s[j])
+            maxL=max(maxL,len(arr))
+            j+=1
+        return maxL

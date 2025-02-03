@@ -1,0 +1,4 @@
+def find_missing(nums):
+    return sum(range(1, len(nums) + 2)) - sum(nums)
+
+print(find_missing([1, 2, 4, 5]))  # Output: 3
